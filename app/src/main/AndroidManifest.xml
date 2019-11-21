@@ -12,18 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.Play_Activity"></activity>
+        <activity android:name=".activities.registration_Activity" />
+        <activity android:name=".activities.pre_login_Activity" />
+        <activity android:name=".activities.login_Activity" />
+        <activity android:name=".activities.Welcome_Activity" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activities.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
 
-        </activity>
     </application>
 
 </manifest>

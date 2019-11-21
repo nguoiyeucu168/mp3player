@@ -14,8 +14,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import vn.kat.mp3player.MainActivity;
+import vn.kat.mp3player.activities.MainActivity;
 import vn.kat.mp3player.R;
+import vn.kat.mp3player.activities.Play_Activity;
 
 public class AlbumsFragment extends Fragment {
 
@@ -39,7 +40,7 @@ public class AlbumsFragment extends Fragment {
         btnTestPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), MainActivity.class);
+                Intent intent = new Intent(getContext(), Play_Activity.class);
                 startActivity(intent);
             }
         });
