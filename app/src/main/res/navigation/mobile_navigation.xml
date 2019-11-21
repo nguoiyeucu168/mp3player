@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_profile">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="vn.kat.mp3player.ui.home.HomeFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_albums"
+        android:name="vn.kat.mp3player.ui.albums.AlbumsFragment"
+        android:label="@string/albums"
+        tools:layout="@layout/fragment_albums" />
+
+    <fragment
+        android:id="@+id/nav_tracks"
+        android:name="vn.kat.mp3player.ui.slideshow.SlideshowFragment"
+        android:label="@string/tracks"
+        tools:layout="@layout/fragment_tracks" />
+
+    <fragment
+        android:id="@+id/nav_playlists"
+        android:name="vn.kat.mp3player.ui.tools.ToolsFragment"
+        android:label="@string/playlists"
+        tools:layout="@layout/fragment_playlists" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="vn.kat.mp3player.ui.share.ShareFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="vn.kat.mp3player.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>
