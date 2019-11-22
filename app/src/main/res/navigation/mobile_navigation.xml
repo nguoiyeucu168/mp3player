@@ -19,13 +19,13 @@
 
     <fragment
         android:id="@+id/nav_tracks"
-        android:name="vn.kat.mp3player.ui.slideshow.SlideshowFragment"
+        android:name="vn.kat.mp3player.ui.tracks.TracksFragment"
         android:label="@string/tracks"
         tools:layout="@layout/fragment_tracks" />
 
     <fragment
         android:id="@+id/nav_playlists"
-        android:name="vn.kat.mp3player.ui.tools.ToolsFragment"
+        android:name="vn.kat.mp3player.ui.playlist.PlaylistFragment"
         android:label="@string/playlists"
         tools:layout="@layout/fragment_playlists" />
 

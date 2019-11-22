@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/img_play" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ballad" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Why not me" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enrique Iglesias" />
+
+    </LinearLayout>
+
+
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:outlineSpotShadowColor="@color/colorPurple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgPrev"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/imgPlaySong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/imgNext"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_next" />
+    </LinearLayout>
+
+</LinearLayout>

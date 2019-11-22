@@ -1,4 +1,4 @@
-package vn.kat.mp3player.ui.tools;
+package vn.kat.mp3player.ui.playlist;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,22 +14,22 @@ import androidx.lifecycle.ViewModelProviders;
 
 import vn.kat.mp3player.R;
 
-public class ToolsFragment extends Fragment {
+public class PlaylistFragment extends Fragment {
 
-    private ToolsViewModel toolsViewModel;
+    private PlaylistViewModel playlistViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel =
-                ViewModelProviders.of(this).get(ToolsViewModel.class);
+        playlistViewModel =
+                ViewModelProviders.of(this).get(PlaylistViewModel.class);
         View root = inflater.inflate(R.layout.fragment_playlists, container, false);
-        final TextView textView = root.findViewById(R.id.text_tools);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+//        final TextView textView = root.findViewById(R.id.text_tools);
+//        playlistViewModel.getText().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
         return root;
     }
 }
